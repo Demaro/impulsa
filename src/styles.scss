@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+.intro-header {
+  height: unset !important;
+}
+.top-nav-collapse {
+  background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+}
+.view {
+  height: 100vh !important;
+}
+.navbar:not(.top-nav-collapse) {
+  background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+  }
+  }
+
+
+  .intro-2 {
+    background: url("/assets/code.jpg")no-repeat center center;
+    background-size: cover;
+
+}
+
+//@debugbackground:
+
+
+
+.rgba-gradient .full-bg-img {
+  background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+}
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+      height: 700px;
+
+  }
+
+}

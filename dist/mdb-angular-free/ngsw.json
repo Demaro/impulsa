@@ -1,0 +1,117 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/index.html",
+        "/main.115c8130639d88856cf8.js",
+        "/polyfills.b884faaa7fbdf1e5d7e3.js",
+        "/runtime.6afe30102d8fe7337431.js",
+        "/scripts.7eceae9fb47fcd357dfc.js",
+        "/styles.257a29759c2900612dc7.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/Doge.jpg",
+        "/assets/astro.jpg",
+        "/assets/astro1.jpg",
+        "/assets/back1.jpg",
+        "/assets/back2.jpg",
+        "/assets/code.jpg",
+        "/assets/code1.jpg",
+        "/assets/code3.jpg",
+        "/assets/code4.jpg",
+        "/assets/code5.jpg",
+        "/assets/d.png",
+        "/assets/demaro1.jpg",
+        "/assets/doge2.jpg",
+        "/assets/ekermet.jpg",
+        "/assets/favicon.ico",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/project/insta1.jpg",
+        "/assets/project/insta2.png",
+        "/assets/project/insta3.jpg",
+        "/assets/project/insta4.webp",
+        "/assets/project/insta6.jpg",
+        "/assets/project/insta7.jpg",
+        "/assets/project/insta8.png",
+        "/assets/sky.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/Doge.jpg": "9a9aa14f19ad151713ee9927833b7c3b90d07b0f",
+    "/assets/astro.jpg": "a11c75835ddba4ba459678aeb1a9e009f5436bcc",
+    "/assets/astro1.jpg": "bfed14f9419d4bca8dda52ed9b859033740968fc",
+    "/assets/back1.jpg": "0e32999ea7d6b6ab6ea508c37478f589e26bcc21",
+    "/assets/back2.jpg": "4e1f2a32302f74eff8a856b4acb4fb54de171927",
+    "/assets/code.jpg": "a5b777383dbefc070fb5b0032dd4310aa72a06fb",
+    "/assets/code1.jpg": "c2a5d08f3ea416cc66c4c3d40378d41f1fb693da",
+    "/assets/code3.jpg": "8b4f034a14dd987bd2b231906dbb1289c87e2ea5",
+    "/assets/code4.jpg": "44be85b999301a4f434df08c484d356cf1983901",
+    "/assets/code5.jpg": "81e813c689cfc3634b4dc0d5fea02be7db655d99",
+    "/assets/d.png": "61c2164e6d2de352412b3ebb3d460ca16917f483",
+    "/assets/demaro1.jpg": "cc89ef5e22dcda71cbe3c678083b22fb1607564c",
+    "/assets/doge2.jpg": "138d0088fb040218bdc6ff2029bebf0829e53782",
+    "/assets/ekermet.jpg": "43b64b6851c96b2e9f64222c3d200039f95423ac",
+    "/assets/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/project/insta1.jpg": "5f0c2706ebed89709242c96557992020ec45b785",
+    "/assets/project/insta2.png": "387d1b79528657c99fe9eb2a43619b5fa12b217f",
+    "/assets/project/insta3.jpg": "2549a53f639c1b2d908d539ba7e8c24dd27a5d4c",
+    "/assets/project/insta4.webp": "1f78974f7200f14239fd68d965c4d02b5668cc15",
+    "/assets/project/insta6.jpg": "093643a5f2505b3a64aebf7c631e1751a173199e",
+    "/assets/project/insta7.jpg": "864b4da190376d67808581620c3f1d596f5d2c0c",
+    "/assets/project/insta8.png": "b3ddf2f5e7b1b94580653d0043ac72ddf291c57e",
+    "/assets/sky.jpg": "4cc314f7afc5e4869d0d94b6aca0aaeef55b4adc",
+    "/index.html": "48372e17849080c38b26c14b309c80191c108ab3",
+    "/main.115c8130639d88856cf8.js": "a2ad0c5058f2656a2cb2afa8020a5c938b699735",
+    "/polyfills.b884faaa7fbdf1e5d7e3.js": "ef2035f0504b4f77eac510c33595c81a5d09e33f",
+    "/runtime.6afe30102d8fe7337431.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/scripts.7eceae9fb47fcd357dfc.js": "6eabda25179aae487081c5ee15defd7c70c29934",
+    "/styles.257a29759c2900612dc7.css": "9acd006faa3ebc4226b79d570cbfc514dcf35d65"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

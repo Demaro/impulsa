@@ -1,0 +1,187 @@
+<!-- Intro Section -->
+
+
+<!-- Intro Section -->
+
+
+<!--
+<section  mdbWavesEffect >
+
+        <div class="view  jarallax" data-jarallax='{"speed": 0.2}'  style="background-image: url(/assets/code5.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+
+          <div class="full-bg-img mask rgba-black-dark waves-light" mdbWavesEffect>
+
+            <div class="container flex-center">
+                <div class="row pt-5 mt-3 w-100">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Doge</strong></h2>
+                            <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+                            <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Doge Developer</strong></h5>
+                            <a mdbBtn (click)="scroll('about')" color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>About me</a>
+                            <a  (click)="scroll('portafolio')" mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>portfolio</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+
+</section>
+
+
+-->
+
+
+<div id="about"></div>
+<main>
+    <div  class="container-fluid">
+        <section class="pb-2 my-5">
+
+  <!--Grid column-->
+  <br>
+  <div class="container">
+
+      <div  class="col-lg-4 col-md- mb-lg-0 mb-4 mb-5 pb-3 wow fadeIn">
+
+          <!--Card-->
+          <mdb-card  class="testimonial-card waves-light" mdbWavesEffect>
+
+            <!--Background color-->
+            <div  class="card-up doge-gradient "></div>
+            <!--Avatar-->
+      <div class="avatar mx-auto white">
+        <div class="background"></div>
+        <div id="curve" mdbWavesEffect class="card1 circle text-center rounded-circle waves-light">
+            <img src="assets/Doge.jpg" class="doge">
+            <div class="card-blur"></div>
+
+        </div>
+
+      </div>
+            <mdb-card-body>
+
+                <a href="#">  <h5 class="font-weight-bold dark-grey-text my-1">Doge</h5></a>
+                    <div class="wrapper">
+                        <div class="social-icons">
+                          <div class="icon ">
+                              <a> <i [ngClass]="status ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState" size="large" [name]="iconName"></i></a><h4>12.8k</h4>
+                            <p>Corazones</p>
+                          </div>
+                          <div class="icon">
+                            <a href="#"><i class="fas fa-hand-holding-heart"></i></a>
+                            <h4>12.8k</h4>
+                            <p>Donaciones</p>
+                          </div>
+                          <div class="icon">
+                            <a href="#" ><i class="fab fa-twitter"></i></a>
+                            <h4>12.8k</h4>
+                            <p>Voluntariados</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+            </mdb-card-body>
+          </mdb-card>
+          <!--Card-->
+        </div>
+    <div  class="col-lg-4 col-md- mb-lg-0 mb-4 mb-5 pb-3 wow fadeIn">
+        <!--Card-->
+        <mdb-card  class="testimonial-card waves-light" mdbWavesEffect>
+
+          <!--Background color-->
+          <div  class="card-up doge-gradient "></div>
+          <!--Avatar-->
+          <div class="avatar mx-auto white">
+      <div class="background"></div>
+      <div id="curve" mdbWavesEffect class="card1 circle text-center rounded-circle waves-light">
+          <img src="assets/Doge.jpg" class="doge">
+          <div class="footer">
+              <div class="connections">
+                  <a href="https://www.linkedin.com/in/demaro1/" target="_blank" type="button" mdbBtn floating="true" size="sm" class="mx-1 mb-0 btn-fb connection linkedin btn-fb3">
+                      <i class="fa fa-linkedin"></i>
+                  </a>
+                  <div class="connection instagram"><div class="icon"></div></div>
+                  <div class="connection twitter"><div class="icon"></div></div>
+                  <div class="connection behance"><div class="icon"></div></div>
+              </div>
+              <svg id="curve">
+                  <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                  <rect id="dummyRect" x="0" y="0" height="450" width="400"
+            fill="transparent" />
+                  <!-- slide up-->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                  <!-- slide up and curve in -->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                  <!-- slide down and curve in -->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                  <!-- slide down and curve out -->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                  <!-- curve in -->
+                  <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                  <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+              </svg>
+          </div>
+          <div class="card-blur"></div>
+      </div>
+          </div>
+          <mdb-card-body>
+
+
+
+                  <div class="wrapper">
+                      <div class="social-icons">
+                        <div class="icon ">
+                            <a> <i [ngClass]="status ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState" size="large" [name]="iconName"></i></a><h4>12.8k</h4>
+                          <p>Corazones</p>
+                        </div>
+
+                        <div class="icon">
+                          <a href="#"><i class="fas fa-hand-holding-heart"></i></a>
+                          <h4>12.8k</h4>
+                          <p>Donaciones</p>
+                        </div>
+
+                        <div class="icon">
+                          <a href="#" ><i class="fab fa-twitter"></i></a>
+                          <h4>12.8k</h4>
+                          <p>Voluntariados</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+          </mdb-card-body>
+        </mdb-card>
+        <!--Card-->
+      </div>
+
+
+        <div class="col-md-4">
+
+        </div>
+
+      </div>
+
+
+  <!--Grid column-->
+  <hr >
+<!--Section: Features v.2-->
+
+<!--Section: Features v.2-->
+<hr >
+<!--Projects section v.4-->
+
+<!--Projects section v.4-->
+
+</section>
+<!--Section: Features v.3-->
+
+</div>
+
+</main>
