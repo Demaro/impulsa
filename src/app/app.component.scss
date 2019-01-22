@@ -13,6 +13,14 @@
       left: 0%;
   }
 
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: initial !important;
+}
+
 
   .dark {
     background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
@@ -20,7 +28,7 @@
 
   .logo-impulsa{
 
-    width: 50%;
+    width: 100%;
   }
 
 
