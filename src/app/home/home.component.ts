@@ -25,10 +25,14 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 export class HomeComponent implements OnInit {
 
   public likeState1: string = 'unliked';
+  public likeState2: string = 'unliked';
+  public likeState3: string = 'unliked';
   public iconName: string = 'heart-empty';
 
   constructor() { }
   status1: boolean = false;
+  status2: boolean = false;
+  status3: boolean = false;
   ngOnInit() {
   }
 
