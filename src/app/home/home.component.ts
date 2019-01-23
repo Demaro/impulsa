@@ -18,42 +18,39 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
             opacity: '6',
             transform: 'scale(1.2)'
         })),
-        transition('unliked <=> liked', animate('350ms ease-out',  ))
+        transition('unliked <=> liked', animate('250ms ease-out', ))
     ])
   ]
 })
 export class HomeComponent implements OnInit {
 
-  public likeState: string = 'unliked';
+  public likeState1: string = 'unliked';
   public iconName: string = 'heart-empty';
 
   constructor() { }
-  status: boolean = false;
+  status1: boolean = false;
   ngOnInit() {
   }
 
   toggleLikeState(){
 
 
-    this.status = !this.status;
+    this.status1 = !this.status1;
 
 
-    if(this.likeState == 'unliked'){
-      this.likeState = 'liked';
+    if(this.likeState1 == 'unliked'){
+      this.likeState1 = 'liked';
       this.iconName = 'heart';
     } else {
-      this.likeState = 'unliked';
+      this.likeState1 = 'unliked';
       this.iconName = 'heart-empty';
     }
 
 
 
+
+
   }
-
-clickEvent(){
-    this.status = !this.status;
-}
-
 
   scroll(id) {
 
