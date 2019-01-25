@@ -30,7 +30,19 @@
   color: #e74c3c
 }
 
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
 
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .profesion-card {
   margin-top: 93.25px !important;
@@ -44,12 +56,12 @@
 }
 .card1 {
   border-radius: 100%;
-  height: 150px;
-  width: 150px;
-  top: 0;
+  height: 100px;
+  width: 100px;
+  top: 90%;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: 40px;
   margin: auto;
   background-image: url(https://s8.postimg.org/jqyxb0291/card.png);
   background-size: cover;
@@ -57,9 +69,10 @@
   background-repeat: no-repeat;
   box-shadow: 0 0 80px -10px black;
   overflow: hidden;
-
   position: relative;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -68,12 +81,32 @@
 
 }
 
-.testimonial-card .avatar {
 
-  width: 150px !important;
-
+@media (min-width: 576px) {
+  .card-deck-2 {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
 }
+
+.mdcard-body {
+  margin-top: -40px;
+}
+
+
+@media (min-width: 576px) {
+  .card-deck-2 .card {
+    display: flex;
+    flex: 1 0 0%;
+    flex-direction: column;
+
+
+  }
+}
+
 
 .btn-fb1 {
   background-color: #333!important;
@@ -138,6 +171,12 @@ a[ id= "curve" ]:target ~ #panel article.panel {
 
 .doge-gradient {
   background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+}
+
+.logo-fundation{
+
+  width: 100%
+
 }
 
 .connection {
@@ -484,6 +523,16 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
 		}
 	}
 
+
+  .logo-left {
+    margin-left: 300px;
+}
+
+
+.btn-floating {
+  background: black !important;
+  color: black !important;
+  }
 	.social-icons {
 		display: flex;
 		justify-content: space-between;
@@ -493,12 +542,10 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
 			align-items: center;
 			flex-direction: column;
 			a {
-				color:  #080911;
+				color:  #757575;
 				width: 60px;
-				height: 60px;
-				font-size: 30px;
-				line-height: 60px;
-				text-align: center;
+				font-size: 20px;
+
 				border-radius: 30px;
 
 			}
@@ -523,4 +570,48 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
 
 
 
+
+
+
+
+.container1 {
+  width: 280px;
+  height: 500px;
+  margin: 30px auto;
+}
+
+.card1 {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.product-price {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 100%;
+    margin-top: -180%;
+    margin-left: 90%;
+
+}
+
+.testimonial-card .avatar{
+  width: 100px !important;
+}
+
+
+
+.testimonial-card .card-up {
+  overflow: visible !important;
+  height: 200px;
+  -webkit-border-top-left-radius: .25rem;
+  border-top-left-radius: .25rem;
+  -webkit-border-top-right-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
 
