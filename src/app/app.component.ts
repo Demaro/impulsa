@@ -6,7 +6,7 @@ import { SwUpdate } from '@angular/service-worker';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   constructor(private swUpdate: SwUpdate) {
   }
@@ -14,7 +14,20 @@ export class AppComponent {
 
   jaja = "jaja"
 
+  ngOnInit() {
+    if (this.swUpdate.isEnabled) {
 
+      this.swUpdate.available.subscribe(() => {
+
+          if(confirm("Nueva version de impulsa, desea actualizarla?")) {
+
+              window.location.reload();
+          }
+
+        });
+      }
+
+}
 
 }
 
