@@ -16,9 +16,9 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         state('liked', style({
             color: '#e74c3c',
             opacity: '6',
-            transform: 'scale(1.2)'
+            transform: 'scale(1.4)'
         })),
-        transition('unliked <=> liked', animate('150ms ease-out', ))
+        transition('unliked <=> liked', animate('160ms ease-out', ))
     ])
   ]
 })

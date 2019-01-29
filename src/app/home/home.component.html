@@ -35,18 +35,16 @@
 
 -->
 
+
+
 <div class="container">
 
 <!--Section: Products v.2-->
 <!--Section: Products v.5-->
-<section class="text-center pb-3 my-5">
+<section class="text-center pb-6 my-5">
   <!--Section heading-->
-  <h2 class="h1 py-5">Ultimos productos</h2>
-  <!--Section description-->
-  <p class="grey-text pb-5">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam
-</p>
 
+  <h2 class="h1-responsive py-5 font-weight-bold">Ultimos productos</h2>
 
   <!--Carousel Wrapper-->
   <mdb-carousel  class="carousel-multi-item multi-animation " [type]="'carousel-multi-item'"
@@ -468,9 +466,6 @@
 
 
                 </div>
-
-            <!--Card image-->
-            <!--Card content-->
             <mdb-card-body cascade="true" class="mdcard-body text-center no-padding">
 
 
@@ -753,10 +748,187 @@
   <!--/.Carousel Wrapper-->
 
 </section>
-<!--Section: Products v.5-->
+
+
+<!-- Section: Testimonials v.4 -->
+<section class="text-center pb-6 my-5">
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold my-5">Ultimos aportes</h2>
+
+
+    <!-- Grid row -->
+    <div class="row">
+      <!--Carousel Wrapper-->
+      <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation testimonial-carousel" [type]="'carousel-multi-item'"
+        [animation]="'slide'">
+
+        <!--Second slide-->
+        <mdb-slide>
+            <!--Grid column-->
+            <div class="col-md-4">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                    <!--Card image-->
+                    <div class="testimonial overlay waves-light" mdbWavesEffect>
+                      <a>
+                        <div class="mask waves-effect waves-light">
+                        </div>
+                      </a>
+                        <div id="curve" mdbWavesEffect class="avatar mx-auto">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle img-fluid">
+                        </div>
+                      </div>
+                    <mdb-card-body cascade="true" class="mdcard-body text-center no-padding">
+                      <!--Category & Title-->
+                      <h4 class="font-weight-bold mt-4">Malu</h4>
+                      <h6 class="blue-text font-weight-bold my-3">Graphic Design</h6>
+                      <p  style="
+                      margin-left: 300px;" ></p>
+                      <mdb-card-footer>
+                          <span class="float-center">
+                              <div class="wrapper">
+                                  <div class="social-icons">
+                                    <div class="icon ">
+                                        <a><i [ngClass]="status1 ? 'fa fa-heart': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i></a>
+                                          <h6>330</h6>
+                                      <p>Corazones</p>
+                                    </div>
+                                    <div class="icon">
+                                      <a href="#"><i class="fas fa-hand-holding-heart"></i></a>
+                                      <h6>90</h6>
+                                      <p>Aportes</p>
+                                    </div>
+                                    <div class="icon">
+                                      <a href="#" ><i class="fa fa-check "></i></a>
+                                      <h6>63</h6>
+                                      <p>Firmas</p>
+                                    </div>
+                                  </div>
+                                </div>
+                          </span>
+                      </mdb-card-footer>
+                    </mdb-card-body>
+
+                  </mdb-card>
+                <!--Card-->
+              </div>
+
+          </mdb-slide>
+
+          <mdb-slide>
+              <!--Grid column-->
+              <div class="col-md-4">
+                  <!--Card-->
+                  <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                      <!--Card image-->
+                      <div class="testimonial overlay waves-light" mdbWavesEffect>
+                        <a>
+                          <div class="mask waves-effect waves-light">
+                          </div>
+                        </a>
+                          <div id="curve" mdbWavesEffect class="avatar mx-auto">
+                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-fluid">
+                          </div>
+                        </div>
+                      <mdb-card-body cascade="true" class="mdcard-body text-center no-padding">
+                        <!--Category & Title-->
+                        <h4 class="font-weight-bold mt-4">Demaro Create</h4>
+                        <h6 class="blue-text font-weight-bold my-3">Software Developer</h6>
+                        <p  style="
+                        margin-left: 300px;" ></p>
+                        <mdb-card-footer>
+                            <span class="float-center">
+                                <div class="wrapper">
+                                    <div class="social-icons">
+                                      <div class="icon ">
+                                          <a><i [ngClass]="status1 ? 'fa fa-heart': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i></a>
+                                            <h6>130</h6>
+                                        <p>Corazones</p>
+                                      </div>
+                                      <div class="icon">
+                                        <a href="#"><i class="fas fa-hand-holding-heart"></i></a>
+                                        <h6>60</h6>
+                                        <p>Aportes</p>
+                                      </div>
+                                      <div class="icon">
+                                        <a href="#" ><i class="fa fa-check "></i></a>
+                                        <h6>63</h6>
+                                        <p>Firmas</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </span>
+                        </mdb-card-footer>
+                      </mdb-card-body>
+
+                    </mdb-card>
+                  <!--Card-->
+                </div>
+
+            </mdb-slide>
+
+            <mdb-slide>
+                <!--Grid column-->
+                <div class="col-md-4">
+                    <!--Card-->
+                    <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                        <!--Card image-->
+                        <div class="testimonial overlay waves-light" mdbWavesEffect>
+                          <a>
+                            <div class="mask waves-effect waves-light">
+                            </div>
+                          </a>
+                            <div id="curve" mdbWavesEffect class="avatar mx-auto">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(6).jpg" class="rounded-circle img-fluid">
+                            </div>
+                          </div>
+                        <mdb-card-body cascade="true" class="mdcard-body text-center no-padding">
+                          <!--Category & Title-->
+                          <h4 class="font-weight-bold mt-4">María Belén</h4>
+                          <h6 class="blue-text font-weight-bold my-3">Abogada</h6>
+                          <p  style="
+                          margin-left: 300px;" ></p>
+                          <mdb-card-footer>
+                              <span class="float-center">
+                                  <div class="wrapper">
+                                      <div class="social-icons">
+                                        <div class="icon ">
+                                            <a><i [ngClass]="status1 ? 'fa fa-heart': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i></a>
+                                              <h6>130</h6>
+                                          <p>Corazones</p>
+                                        </div>
+                                        <div class="icon">
+                                          <a href="#"><i class="fas fa-hand-holding-heart"></i></a>
+                                          <h6>60</h6>
+                                          <p>Aportes</p>
+                                        </div>
+                                        <div class="icon">
+                                          <a href="#" ><i class="fa fa-check "></i></a>
+                                          <h6>63</h6>
+                                          <p>Firmas</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </span>
+                          </mdb-card-footer>
+                        </mdb-card-body>
+
+                      </mdb-card>
+                    <!--Card-->
+                  </div>
+
+              </mdb-slide>
+        <!--/Third slide-->
+      </mdb-carousel>
+      <!--/.Carousel Wrapper-->
+    </div>
+    <!-- Grid row -->
+  </section>
+  <!-- Section: Testimonials v.4 -->
+
 </div>
 
-  <!--Section: Products v.2-->
+
 
 
   <!--

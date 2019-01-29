@@ -82,6 +82,40 @@
 }
 
 
+.card2 {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card2 {
+  border-radius: 100%;
+
+  top: 90%;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+  margin: auto;
+  background-image: url(https://s8.postimg.org/jqyxb0291/card.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 80px -10px black;
+  overflow: hidden;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+
+}
+
+
+
+
 @media (min-width: 576px) {
   .card-deck-2 {
     display: flex;
@@ -543,12 +577,17 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
 			flex-direction: column;
 			a {
 				color:  #757575;
-				width: 60px;
-				font-size: 20px;
+				font-size: 25px;
 
 				border-radius: 30px;
 
 			}
+      .item {
+
+        margin-left: 300px;
+
+      }
+
 
 
 
@@ -565,6 +604,10 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
 			}
 		}
 	}
+}
+
+.left {
+  margin: 5px !important;
 }
 
 
