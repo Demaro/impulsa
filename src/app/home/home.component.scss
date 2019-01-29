@@ -584,7 +584,7 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
 			}
       .item {
 
-        margin-left: 300px;
+        margin-left: 300px !important;
 
       }
 
@@ -602,7 +602,8 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
 				color: #666B7D;
 				font-size: 12px;
 			}
-		}
+    }
+
 	}
 }
 
