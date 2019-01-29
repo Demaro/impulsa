@@ -47,7 +47,7 @@
   <h2 class="h1-responsive py-5 font-weight-bold">Ultimos productos</h2>
 
   <!--Carousel Wrapper-->
-  <mdb-carousel  class="carousel-multi-item multi-animation " [type]="'carousel-multi-item'"
+  <mdb-carousel  [isControls]="true"  class="carousel-multi-item multi-animation " [type]="'carousel-multi-item'"
     [animation]="'slide'">
     <!--First slide-->
     <mdb-slide>
@@ -102,13 +102,15 @@
                   <span class="float-left">
                       <div class="wrapper">
                           <div class="social-icons">
-
-                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="fa-2x" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                            <div class="icons1">
+                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
                                   &nbsp;
-                                </a><h8>12.8k</h8>
+                                </a>
+                              </div>
+                              <h8>12.8k</h8>
                                 &nbsp;
-                              <p>Me gusta</p>
 
+                              <p>Me gusta</p>
                       </div>
                       </div>
                   </span>
@@ -116,10 +118,6 @@
                 <span class="float-right"> <strong> $ 13.000</strong>
 
                 </span>
-
-
-
-
               </mdb-card-footer>
 
             </mdb-card-body>
@@ -140,14 +138,11 @@
             <div class="testimonial-card view view-cascade overlay waves-light" mdbWavesEffect>
 
               <div >
-
                   <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(5).jpg"
                   alt="sample photo">
 
                 </mdb-card-img>
                 </div>
-
-
 
               <a>
                 <div class="mask waves-effect waves-light">
@@ -156,10 +151,7 @@
             </div>
                 <div id="curve" mdbWavesEffect class="card1 circle text-center rounded-circle ">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/LOGO-FUNDACION-UNIFRANZ-2017.png" class="logo-fundation waves-light">
-
-
                 </div>
-
             <!--Card image-->
             <!--Card content-->
             <mdb-card-body cascade="true" class="mdcard-body text-center no-padding">
@@ -184,10 +176,12 @@
                   <span class="float-left">
                       <div class="wrapper">
                           <div class="social-icons">
-
-                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
-                                  &nbsp;
-                                </a><h8>120</h8>
+                              <div class="icons1">
+                                  <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                                    &nbsp;
+                                  </a>
+                                </div>
+                                <h8>120</h8>
                                 &nbsp;
                               <p>Me gusta</p>
                           </div>
@@ -262,9 +256,12 @@
                         <div class="wrapper">
                             <div class="social-icons">
 
-                                  <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
-                                    &nbsp;
-                                  </a><h8>300</h8>
+                                <div class="icons1">
+                                    <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                                      &nbsp;
+                                    </a>
+                                  </div>
+                                  <h8>300</h8>
                                   &nbsp;
                                 <p>Me gusta</p>
                             </div>
@@ -341,9 +338,12 @@
                       <div class="wrapper">
                           <div class="social-icons">
 
-                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
-                                  &nbsp;
-                                </a><h8>900</h8>
+                              <div class="icons1">
+                                  <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                                    &nbsp;
+                                  </a>
+                                </div>
+                                <h8>900</h8>
                                 &nbsp;
                               <p>Me gusta</p>
                           </div>
@@ -417,9 +417,12 @@
                       <div class="wrapper">
                           <div class="social-icons">
 
-                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
-                                  &nbsp;
-                                </a><h8>630</h8>
+                              <div class="icons1">
+                                  <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                                    &nbsp;
+                                  </a>
+                                </div>
+                                <h8>630</h8>
                                 &nbsp;
                               <p>Me gusta</p>
                           </div>
@@ -489,9 +492,12 @@
                       <div class="wrapper">
                           <div class="social-icons">
 
-                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
-                                  &nbsp;
-                                </a><h8>360</h8>
+                              <div class="icons1">
+                                  <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                                    &nbsp;
+                                  </a>
+                                </div>
+                                <h8>360</h8>
                                 &nbsp;
                               <p>Me gusta</p>
                           </div>
@@ -569,9 +575,12 @@
                       <div class="wrapper">
                           <div class="social-icons">
 
-                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
-                                  &nbsp;
-                                </a><h8>169</h8>
+                              <div class="icons1">
+                                  <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                                    &nbsp;
+                                  </a>
+                                </div>
+                                <h8>169</h8>
                                 &nbsp;
                               <p>Me gusta</p>
                           </div>
@@ -645,9 +654,12 @@
                       <div class="wrapper">
                           <div class="social-icons">
 
-                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
-                                  &nbsp;
-                                </a><h8>96</h8>
+                              <div class="icons1">
+                                  <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                                    &nbsp;
+                                  </a>
+                                </div>
+                                <h8>96</h8>
                                 &nbsp;
                               <p>Me gusta</p>
                           </div>
@@ -720,9 +732,12 @@
                       <div class="wrapper">
                           <div class="social-icons">
 
-                                <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
-                                  &nbsp;
-                                </a><h8>12.8k</h8>
+                              <div class="icons1">
+                                  <a> <i [ngClass]="status1 ? 'fa fa-heart ': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i>
+                                    &nbsp;
+                                  </a>
+                                </div>
+                                <h8>12.8k</h8>
                                 &nbsp;
                               <p>Me gusta</p>
                           </div>
@@ -809,6 +824,103 @@
                   </mdb-card>
                 <!--Card-->
               </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                    <!--Card-->
+                    <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                        <!--Card image-->
+                        <div class="testimonial overlay waves-light" mdbWavesEffect>
+                          <a>
+                            <div class="mask waves-effect waves-light">
+                            </div>
+                          </a>
+                            <div id="curve" mdbWavesEffect class="avatar mx-auto">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-fluid">
+                            </div>
+                          </div>
+                        <mdb-card-body cascade="true" class="mdcard-body text-center no-padding">
+                          <!--Category & Title-->
+                          <h4 class="font-weight-bold mt-4">Demaro Create</h4>
+                          <h6 class="blue-text font-weight-bold my-3">Software Developer</h6>
+                          <p  style="
+                          margin-left: 300px;" ></p>
+                          <mdb-card-footer>
+                              <span class="float-center">
+                                  <div class="wrapper">
+                                      <div class="social-icons">
+                                        <div class="icon ">
+                                            <a><i [ngClass]="status1 ? 'fa fa-heart': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i></a>
+                                              <h6>130</h6>
+                                          <p>Corazones</p>
+                                        </div>
+                                        <div class="icon">
+                                          <a href="#"><i class="fas fa-hand-holding-heart"></i></a>
+                                          <h6>60</h6>
+                                          <p>Aportes</p>
+                                        </div>
+                                        <div class="icon">
+                                          <a href="#" ><i class="fa fa-check "></i></a>
+                                          <h6>63</h6>
+                                          <p>Firmas</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </span>
+                          </mdb-card-footer>
+                        </mdb-card-body>
+
+                      </mdb-card>
+                    <!--Card-->
+                  </div>
+
+
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                      <!--Card-->
+                      <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                          <!--Card image-->
+                          <div class="testimonial overlay waves-light" mdbWavesEffect>
+                            <a>
+                              <div class="mask waves-effect waves-light">
+                              </div>
+                            </a>
+                              <div id="curve" mdbWavesEffect class="avatar mx-auto">
+                                  <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(6).jpg" class="rounded-circle img-fluid">
+                              </div>
+                            </div>
+                          <mdb-card-body cascade="true" class="mdcard-body text-center no-padding">
+                            <!--Category & Title-->
+                            <h4 class="font-weight-bold mt-4">María Belén</h4>
+                            <h6 class="blue-text font-weight-bold my-3">Abogada</h6>
+                            <p  style="
+                            margin-left: 300px;" ></p>
+                            <mdb-card-footer>
+                                <span class="float-center">
+                                    <div class="wrapper">
+                                        <div class="social-icons">
+                                          <div class="icon ">
+                                              <a><i [ngClass]="status1 ? 'fa fa-heart': '  far fa-heart'" class="" (click)="toggleLikeState()"  tappable [@heart]="likeState1" size="large" [name]="iconName"></i></a>
+                                                <h6>130</h6>
+                                            <p>Corazones</p>
+                                          </div>
+                                          <div class="icon">
+                                            <a href="#"><i class="fas fa-hand-holding-heart"></i></a>
+                                            <h6>60</h6>
+                                            <p>Aportes</p>
+                                          </div>
+                                          <div class="icon">
+                                            <a href="#" ><i class="fa fa-check "></i></a>
+                                            <h6>63</h6>
+                                            <p>Firmas</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </span>
+                            </mdb-card-footer>
+                          </mdb-card-body>
+
+                        </mdb-card>
+                      <!--Card-->
+                    </div>
           </mdb-slide>
           <mdb-slide>
               <!--Grid column-->
