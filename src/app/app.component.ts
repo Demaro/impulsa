@@ -6,7 +6,7 @@ import { SwUpdate } from '@angular/service-worker';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent{
 
   constructor(private swUpdate: SwUpdate) {
   }
@@ -14,20 +14,6 @@ export class AppComponent implements OnInit {
 
   jaja = "jaja"
 
-  ngOnInit() {
-    if (this.swUpdate.isEnabled) {
-
-      this.swUpdate.available.subscribe(() => {
-
-          if(confirm("New version available. Load New Version?")) {
-
-              window.location.reload();
-          }
-
-        });
-      }
-
-}
 
 scroll(id) {
 
