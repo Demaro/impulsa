@@ -47,7 +47,7 @@
   <h2 class="h1-responsive py-5 font-weight-bold">Ultimos productos</h2>
 
   <!--Carousel Wrapper-->
-  <mdb-carousel  [isControls]="true"  class="carousel-multi-item multi-animation " [type]="'carousel-multi-item'"
+  <mdb-carousel  #carousel [isControls]="true"  class="carousel-multi-item multi-animation " [type]="'carousel-multi-item'"
     [animation]="'slide'">
     <!--First slide-->
     <mdb-slide>
@@ -772,7 +772,7 @@
     <h2 class="h1-responsive font-weight-bold my-5">Ultimos aportes</h2>
     <!-- Grid row -->
       <!--Carousel Wrapper-->
-      <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation testimonial-carousel" [type]="'carousel-multi-item'"
+      <mdb-carousel #carousel [isControls]="true" class="carousel-multi-item multi-animation testimonial-carousel" [type]="'carousel-multi-item'"
         [animation]="'slide'">
         <!--Second slide-->
         <mdb-slide>
