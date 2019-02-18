@@ -11,7 +11,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         state('unliked', style({
             color: '#040000',
             opacity: '6',
-            transform: 'scale(0.9)',
+            transform: 'scale(1.0)',
         })),
         state('liked', style({
             color: '#d50000',
@@ -39,10 +39,6 @@ export class HomeComponent implements OnInit {
 
   toggleLikeState(){
 
-
-
-
-
     if(this.likeState1 == 'unliked'){
       this.likeState1 = 'liked';
       this.iconName = 'heart';
@@ -52,10 +48,6 @@ export class HomeComponent implements OnInit {
     }
 
     this.status1 = !this.status1;
-
-
-
-
 
   }
 

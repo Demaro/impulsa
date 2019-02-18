@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import { OngPageComponent } from './ong/ong-page/ong-page.component';
 declare var Hammer: any;
 
 export class MyHammerConfig extends HammerGestureConfig {
@@ -35,7 +36,8 @@ export class MyHammerConfig extends HammerGestureConfig {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    OngPageComponent
   ],
   imports: [
     BrowserModule,

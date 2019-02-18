@@ -1,9 +1,11 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
+import { OngPageComponent } from './ong/ong-page/ong-page.component';
 
 const appRoutes: Routes = [
    { path: '', component: HomeComponent},
+   { path: 'ong', component: OngPageComponent},
 
 
 
