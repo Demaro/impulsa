@@ -7,7 +7,7 @@
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+  background: transparent !important;
 }
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {

@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , AfterViewInit} from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-ong-page',
   templateUrl: './ong-page.component.html',
   styleUrls: ['./ong-page.component.scss']
 })
-export class OngPageComponent implements OnInit {
+export class OngPageComponent implements OnInit , AfterViewInit {
 
-  constructor() { }
+  constructor(public auth: AuthService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit () {
+    setTimeout (() => {
+        this.auth.colornav = false;
+    });
+}
+
+
+ngAfterViewInit() {
+    setTimeout (() => {
+
+    this.auth.colornav = false;
+
+
+    });
+
+}
 
 }

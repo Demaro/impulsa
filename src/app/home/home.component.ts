@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit  } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { AuthService } from '../services/auth.service';
 
 
 @Component({
@@ -23,19 +24,35 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
   public likeState1: string = 'unliked';
   public likeState2: string = 'unliked';
   public likeState3: string = 'unliked';
   public iconName: string = 'heart-empty';
 
-  constructor() { }
+  constructor(public auth: AuthService) { }
   status1: boolean = false;
   status2: boolean = false;
   status3: boolean = false;
-  ngOnInit() {
-  }
+
+
+  ngOnInit () {
+    setTimeout (() => {
+        this.auth.colornav = true;
+    });
+}
+
+
+ngAfterViewInit() {
+    setTimeout (() => {
+
+    this.auth.colornav = true;
+
+
+    });
+
+}
 
   toggleLikeState(){
 

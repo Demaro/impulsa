@@ -1,6 +1,32 @@
 <header class="intro-header">
 
   <!--Navbar-->
+
+
+  <mdb-navbar *ngIf="auth.colornav; else not_top_nav_collapse" SideClass="navbar navbar-expand-lg navbar-dark fixed-top  top-nav-collapse ">
+    <mdb-navbar-brand>
+        <a class="logo navbar-brand waves-light" mdbWavesEffect href="#">  <img class="logo-size" src="assets/logo/logo_nav.png"></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active waves-light" mdbWavesEffect>
+                <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link"  href="#">Portfolio</a>
+            </li>
+        </ul>
+        <form class="form-inline waves-light" mdbWavesEffect>
+            <mdb-navbar-brand>
+
+            </mdb-navbar-brand>
+        </form>
+    </links>
+</mdb-navbar>
+
+
+<ng-template #not_top_nav_collapse>
   <mdb-navbar  SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
       <mdb-navbar-brand>
           <a class="logo navbar-brand waves-light" mdbWavesEffect href="#">  <img class="logo-size" src="assets/logo/logo_nav.png"></a>
@@ -23,6 +49,7 @@
       </links>
   </mdb-navbar>
 
+</ng-template>
 </header>
 
 <router-outlet></router-outlet>

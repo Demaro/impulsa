@@ -1,0 +1,20 @@
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://s2.postimg.org/tzymg4j15/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+}
+
+.rgba-gradient .full-bg-img {
+  background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
+
+}
+
+.rgba-black-dark {
+  background-color: rgba(0, 0, 0, 0.63);
+}
