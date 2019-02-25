@@ -13,7 +13,6 @@ export class OngPageComponent implements OnInit , AfterViewInit {
   ngOnInit () {
     setTimeout (() => {
         this.auth.colornav = false;
-
         window.scrollTo(0, 0)
     });
 }
@@ -23,12 +22,9 @@ ngAfterViewInit() {
     setTimeout (() => {
 
     this.auth.colornav = false;
-
     window.scrollTo(0, 0)
 
-
     });
-
 }
 
 }
