@@ -40,6 +40,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngOnInit () {
     setTimeout (() => {
         this.auth.colornav = true;
+        window.scrollTo(0, 0)
     });
 }
 

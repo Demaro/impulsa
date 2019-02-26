@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+$color-nav: linear-gradient(to right, #00364f 0, #2a5870cf, #234d61bf 100%) !important;
+$inderect: #013750;
+
 .intro-header {
   height: unset !important;
 }
 .top-nav-collapse {
-  background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+  background: $color-nav
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -11,7 +15,7 @@
 }
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+    background: $color-nav
   }
   }
 
@@ -25,33 +29,33 @@
 //@debugbackground:
 
 .carousel-multi-item .controls-top .btn-floating {
-  background: #fe7201 !important;
+  background: $inderect
 }
 
 .carousel-multi-item .carousel-indicators .active {
   height: 1.56rem;
   width: 1.56rem;
   max-width: 1.56rem;
-  background: #fe7201 !important;
+  background: $inderect;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
 .carousel-multi-item .carousel-indicators li {
 
-  background: #fe7201 !important
+  background: $inderect
 
 }
 
 .rgba-gradient .full-bg-img {
-  background: linear-gradient(to right, #ff6b34eb 0, #ff7601, #fb5202 100%);
+  background: $color-nav
 }
 @media (max-width: 740px) {
   .full-height,
   .full-height body,
   .full-height header,
   .full-height header .view {
-      height: 700px;
+      height: 1020px;
 
   }
 

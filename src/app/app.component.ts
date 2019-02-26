@@ -21,8 +21,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-
-
     if (this.swUpdate.isEnabled) {
 
       this.swUpdate.available.subscribe(() => {
